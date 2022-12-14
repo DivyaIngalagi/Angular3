@@ -1,0 +1,13 @@
+<p>switch works!</p>
+<label><input type="radio" name="day" [(ngModel)]="radioSelected" value="Monday"/>Monday</label>
+<label><input type="radio" name="day" [(ngModel)]="radioSelected" value="Tuesday"/>Tuesday</label>
+<label><input type="radio" name="day" [(ngModel)]="radioSelected" value="Wednesday"/>Wednesday</label>
+{{radioSelected}}
+<div [ngSwitch]="radioSelected">
+
+    <p *ngSwitchCase="'Monday'">You Selected Monday</p>
+    <p *ngSwitchCase="'Tuesday'">You Selected Tuesday</p>
+    <p *ngSwitchCase="'Wednesday'">You Selected Wednesday</p>
+    <p *ngSwitchDefault>Sorry Invalid Selection!!</p>
+
+</div>

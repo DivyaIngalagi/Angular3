@@ -1,0 +1,23 @@
+<p>============<b>IF else DIRECTIVE</b>============</p>
+<app-ifelse></app-ifelse>
+<p>============<b>SWITCH DIRECTIVE</b>============</p>
+<app-switch></app-switch>
+<p>============<b>FOR DIRECTIVE</b>============</p>
+<app-for></app-for>
+<p>============<b>STYLE DIRECTIVE</b>============</p>
+<app-style></app-style>
+<p>============<b>CLASS DIRECTIVE</b>============</p>
+<app-class></app-class>
+<p>============<b>CUSTOM CLASS DIRECTIVE</b>============</p>
+Show Me
+
+<input type="checkbox" [(ngModel)]="show">
+
+<div *appTtIf="show">
+  Using the ttIf directive
+</div>
+<div *ngIf="show">
+  Using the ngif directive
+</div>
+<p>============<b>CUSTOM IF DIRECTIVE</b>============</p>
+    <button [appTtClas]="'blue'">Click Me!!!</button>
